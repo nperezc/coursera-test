@@ -92,6 +92,12 @@ article{
 }
 
 @media (max-width: 767px){
+    .container-personal{
+        width: 95%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color:#fff ;
+    }
     article{
          width: 97%;
          height: auto;
