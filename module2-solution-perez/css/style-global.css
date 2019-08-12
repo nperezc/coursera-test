@@ -40,6 +40,7 @@ header img, img .miniature{
 section article{
     display: inline-block;
     position: relative;
+    vertical-align: middle;
 }
 
 article{
@@ -49,6 +50,7 @@ article{
     color:#000;
     padding: 10px;
     font-family: 'Permanent Marker', cursive;
+   border: 2px dashed #fff;
 }
 .title-box{
     border: 1px solid;
@@ -59,4 +61,40 @@ article{
     top: 0;
     position: absolute;
     background-color: chartreuse;
+}
+
+@media (min-width: 768px) and (max-width:991px){
+    article{
+         width: 47%;
+         height: auto;
+         background-color: #000;
+         color:#000;
+         padding: 10px;
+         font-family: 'Permanent Marker', cursive;
+        border: 2px dashed #fff;
+     } 
+     article:nth-child(3n){
+         width: 97%;
+         height: auto;
+         background-color: #000;
+         color:#000;
+         padding: 10px;
+         font-family: 'Permanent Marker', cursive;
+        border: 2px dashed #fff;
+        margin-top: 4px;
+     }
+}
+
+@media (max-width: 767px){
+    article{
+         width: 97%;
+         height: auto;
+         background-color: #000;
+         color:#000;
+         padding: 10px;
+         font-family: 'Permanent Marker', cursive;
+        border: 2px dashed #fff;
+        margin-bottom: 10px;
+     } 
+    
 }
